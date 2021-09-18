@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socket Cliente</title>
+     <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> 
+
+ <title>Socket Cliente</title>
 </head>
-<body>
-<h1>Cliente Socket </h1>
-    <script src="./public/js/socket-cliente.js"></script>
+<body class="container">
+<h1 class="mt-2">Cliente Socket </h1>
+<!-- Debemos poner este script para que nuestro fronend pueda comunicarse -->
+ <p>
+
+Estatus del Servidor
+<span id="Activo" class="text-success">En linea</span>
+<span id="Desactivado" class="text-danger">Fuera en linea</span>
+
+<div class="row">
+
+<div class="col">
+<input type="text" id="txtMensaje" class="form-control">
+</div>
+<div class="col">
+<button id="btnEnviar" class="btn btn-primary">
+Enviar
+</button>
+
+</div>
+</div>
+
+
+
+</p>
+
+<script src="./socket.io/socket.io.js"></script>  
+ <script src="./js/socket-cliente.js"></script>
+
 </body>
 </html>
 
