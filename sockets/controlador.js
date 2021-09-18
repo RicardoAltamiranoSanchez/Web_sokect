@@ -15,7 +15,7 @@ const ControladorSocket= (socket) =>{
    socket.on('enviar-mensaje',(playload,callback)=>{
       //el broadcast es una funcion ya vienen con la libreria de socket se usa para enviar mensajes a todos los usuarios que esten conectados
      const id =12345567;
-      callback(id);    
+     callback(id);    
  //para poder enviar mensaje a todos los clientes debemos poner emit asi todos los clientes recibiran el mensaje con el 
      //Es con io para poder enviar a todas las conexiones
      //se debe poner el enviar-mensaje como referencia si no nolo envia
